@@ -129,10 +129,6 @@
 ;; (defun run-gnuplot (gplfile)
 ;;   (run-program "/opt/local/bin/gnuplot" (list gplfile) :output *standard-output*))
 
-
-
-
-
 (defun run-gnuplot (gplfile)
   (let ((gnuplot (with-output-to-string (gnuplot-path)
 		   (run-program "/usr/bin/which" '("gnuplot") :output gnuplot-path)
